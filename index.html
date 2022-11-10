@@ -1,77 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,700;1,800&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autopeças e Mecânica Gallo e Faria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Autopeças Gallo e Faria</title>
 </head>
+    <body>
 
-<body>
-    
-    <header>
-
-        <img class="logo" src="./assets/LOGO-300x170.png" alt="Logo Gallo e Faria">
-        <img class="menu" src="./assets/menu1.png" alt="Menu">
-
-    </header>
-
-    <main>
-        <div class="horizontalLineOne"></div> <!-- HORIZONTAL LINE -->
-
-        <div class="backgroundMechanic"></div>
-
-        <section class="firstSection">
-
-            <h1>O <strong>reparo ideal</strong></h1>
-            <h2>para sua <strong>frota</strong></h2>
-
-        </section>
-        <div class="horizontalLineTwo"></div> <!-- HORIZONTAL LINE -->
-
-
-        <section class="secondSection">
-
-            <p><span>23 anos</span> de tradição</p>
-            <p>linhas <span>leve</span> e <span>pesada</span></p>
-
-        </section>
-
-        <section class="thirdSection">
-
-            <p>Contando com grande infraestrutura de armazenamento e mais de 20.000 itens cadastrados em estoque, a
-                Autopeças e Mecânica Gallo e Faria é a oficina mais bem preparada da região para te fornecer peças de
-                qualidade e serviço de confiança.</p>
-            <p>Com profissionais capacitados trabalhando em prol de desburocratizar seu atendimento, entregamos
-                agilidade e confiança para nosso amigo cliente.</p>
-
-        </section>
-    
-
-
-    </main>
-
-    
-    <div class="fixedFooterProperties"></div>
-    <footer>
-        <ul>
-            <li><img src="./assets/instagram.png" alt=""><a href="">Instagram</a></li>
-            <li><img src="./assets/facebookicon.png" alt=""><a href="">Facebook</a></li>
-        </ul>
-        <img src="./assets/localizationicon.png" alt="">
-        <div class="adress">
-
-            <p>Estrada Dr. Rogério de Moura Estevão - 25995-290 Teresópolis, Bonsucesso</p>
+        <div class="whatsapp-button-wrapper">
+            <button><img src="./assets/whatsapp-icon.svg" alt="Whatsapp Icon"><a target="_blank" href="https://api.whatsapp.com/send?phone=5521994950814&text=Ol%C3%A1!%20Gostaria%20de%20uma%20informa%C3%A7%C3%A3o.">WhatsApp (21) 21 99495-0814</a></button>
         </div>
-    </footer>
-    <a target="_blank" href="https://api.whatsapp.com/send?phone=5521994950814"><img class="whatsappIcon"
-            src="./assets/whatsapp.png" alt="Whatsapp"></a>
-</body>
 
+        <header id="header">
+            <div class="logo-wrapper"><img src="./assets/logoresize.png" alt="Logo Gallo e Faria"></div>
+            <div class="whatsapp-wrapper"><a target="_blank" href="https://api.whatsapp.com/send?phone=5521994950814&text=Ol%C3%A1!%20Gostaria%20de%20uma%20informa%C3%A7%C3%A3o."><img src="./assets/whatsapp.png" alt="WhatsApp">(21) 99495-0814</a></div>
+            <div class="menu-wrapper"><img src="./assets/menu1.png" alt="Menu"></div>
+        </header>
+        
+        <main id="content">
+
+            <div class="slider">
+                <div class="slides">
+                    <!-- Radio Buttons -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!-- Radio Buttons End -->
+                    <!-- Slide Images-->
+                    <div class="first slide">
+                        <img src="./assets/fachada.jpg" alt="Fachada da Gallo e Faria">
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Caminhão na estrada">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1631377875413-b1e3e660bfa2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Pickup Hilux na roça">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Volkswagen Gol">
+                    </div>
+                    <!-- Slide Images End-->
+                    
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+
+                </div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+
+            <section>
+                
+            </section>
+        </main>
+
+        <footer id="footer">
+            <ul>
+                <li><img src="./assets/instagram.png" alt="Ícone do Instagram"><a target="_blank" href="https://www.instagram.com/galloefaria/">Instagram</a></li>
+                <li><img src="./assets/facebookicon.png" alt="Ícone do Facebook"><a target="_blank" href="https://www.facebook.com/galloefaria">Facebook</a></li>
+                <li><img src="./assets/whatsapp-icon.svg" alt="Ícone do WhatsApp"><a target="_blank" href="https://api.whatsapp.com/send?phone=5521994950814&text=Ol%C3%A1!%20Gostaria%20de%20uma%20informa%C3%A7%C3%A3o.">WhatsApp</a></li>
+            </ul>
+            <div class="adress">
+                <img src="./assets/localizationicon.png" alt="">
+                <p>Estrada Dr. Rogério de Moura Estevão - 25995-290 Teresópolis, Bonsucesso</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
