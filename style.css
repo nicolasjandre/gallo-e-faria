@@ -50,16 +50,16 @@ body {
     background-color: var(--primary-layout-color);
 }
 
-.change .bar1 {
+#nav.active .bar1 {
     transform: translate(0, 10px) rotate(-45deg);
     background-color: var(--primary-layout-color);
 }
   
-.change .bar2 {
+#nav.active .bar2 {
     opacity: 0;
 }
   
-.change .bar3 {
+#nav.active .bar3 {
     transform: translate(0, -10px) rotate(45deg);
     background-color: var(--primary-layout-color);
 }
@@ -78,6 +78,7 @@ body {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
+    padding: 1.5rem;
 }
 
 #navList {
@@ -94,13 +95,15 @@ body {
     transition: .7s;
     visibility: hidden;
     overflow-y: hidden;
+    border-bottom: 3px solid black;
 }
 
 #nav.active #navList {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 20rem;
+    height: 22rem;
+    max-height: 60rem;
     visibility: visible;
 }
 
@@ -626,11 +629,44 @@ a {
     height: auto;
 }
 
+/* BEGIN OF OUR CLIENTS ------------------------------------------------------------ */
+.ourClients {
+    display: none;
+}
 
+.ourClients strong {
+    color: var(--primary-layout-color);
+}
+
+.ourClients h2 {
+    text-align: center;
+    margin: 3rem 0;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+#googleReview {
+    margin: auto;
+    max-width: 100vw;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 
+@media (min-width: 320px) {
+    .ourClients {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        max-width: 100vw;
+    }
+}
+
 @media (min-width: 340px) {
+
+    #nav.active #navList {
+        height: 62vw;
+    }
 
     body {
         padding-bottom: 12rem;
