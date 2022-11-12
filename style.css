@@ -21,7 +21,7 @@ body {
     --primary-layout-color: #881619;
     --secondary-layout-color: #4D74B3;
     position: relative;
-    padding-bottom: calc(5rem + 30vw);
+    padding-bottom: calc(5rem + 15vw);
     background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
 }
 
@@ -37,7 +37,6 @@ body {
     background-color: white;
 }
 /* HAMBURGUER MENU ------------------------------------------------------ */
-
 .bar1, .bar2, .bar3 {
     width: 3rem;
     height: 4px;
@@ -46,9 +45,14 @@ body {
     margin: 6px 2.3rem;
     transition: 0.4s;
  }
-  
+
+.bar2 {
+    background-color: var(--primary-layout-color);
+}
+
 .change .bar1 {
     transform: translate(0, 10px) rotate(-45deg);
+    background-color: var(--primary-layout-color);
 }
   
 .change .bar2 {
@@ -57,20 +61,72 @@ body {
   
 .change .bar3 {
     transform: translate(0, -10px) rotate(45deg);
+    background-color: var(--primary-layout-color);
 }
 
 /* HAMBURGUER MENU END ------------------------------------------------------ */
 
+/* NAV RELATED ------------------------------------------------------------------------*/
+.horizontalLine {
+    margin: auto;
+    width: 20%;
+    border: 1px solid;
+    border-color: rgb(112, 30, 30);
+}
+
+#navList a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+#navList {
+    display: block;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(249,249,249,1) 77%, rgba(228,228,228,1) 100%);
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    top: 5.6rem;
+    left: 0;
+    right: 0;
+    transition: .7s;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+#nav.active #navList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20rem;
+    visibility: visible;
+}
+
+#navList li {
+    list-style: none;
+    padding: 1.5rem;
+    border-bottom: 2px solid var(--primary-layout-color);
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* NAV END ------------------------------------------------------------------------*/
+
+/* MOBILE BUTTON ------------------------------------------------------ */
+
+button#mobileButton {
+    padding: 1rem 0;
+    background: none;
+    border: none;
+}
+
+/* MOBILE END ------------------------------------------------------ */
+
 .logo-wrapper {
     width: 100%;
     max-width: 14.4rem;
-}
-
-.menu-wrapper {
-    display: flex;
-    justify-content: right;
-    width: 100%;
-    max-width: 2.5rem;
 }
 
 .logo-wrapper img {
@@ -79,17 +135,6 @@ body {
     margin-left: 2.3rem;
 }
 
-.menu-wrapper img {
-    width: 6vw;
-    margin-right: 2.3rem;
-    max-width: 2rem;
-    transition: 0.4s;
-}
-
-.menu-wrapper img:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-}
 /* END OF HEADER RELATED ------------------------------------------------------ */
 
 /* FOOTER RELATED ----------------------------------------------------- */
@@ -141,6 +186,7 @@ footer img {
     font-size: 4vw;
     margin-right: 1rem;
 }
+
 /* END OF FOOTER RELATED ----------------------------------------------------- */
 
 /* BEGIN OF SLIDER RELATED ----------------------------------------------------- */
@@ -151,14 +197,14 @@ footer img {
     width: 100vw;
     max-width: 100%;
     height: 60vw;
-    max-height: 91rem;
+    max-height: 60rem;
     overflow: hidden;
 }
 
 .slides {
     width: 400%;
     height: 60vw;
-    max-height: 91rem;
+    max-height: 60rem;
     display: flex;
 }
 
@@ -333,12 +379,14 @@ strong {
 }
 
 .about-us h2 {
+    text-align: center;
     margin: 2rem;
     font-size: 2.4rem;
     text-transform: uppercase;
 }
 
 .about-us h1 {
+    text-align: center;
     margin: 1rem 2rem;
     font-size: 3rem;
     text-transform: uppercase;
@@ -397,7 +445,7 @@ a {
     text-decoration: none;
 }
 
-button {
+.about-us button, .button2 button {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -413,7 +461,7 @@ button {
     margin: 2rem auto;
 }
 
-button:hover {
+.about-us button:hover, .button2 button:hover {
     cursor: pointer;
     transform: scale(1.008);
     filter: brightness(90%);
@@ -439,14 +487,14 @@ button:hover {
     text-transform: uppercase;
     font-size: 3rem;
     text-align: center;
-    line-height: 2;
 }
 
 .visit-us p {
     font-weight: 300;
     text-align: center;
     font-size: 1.8rem;
-    line-height: 2;
+    margin-top: 1rem;
+    line-height: 1.5;
 }
 
 .visit-us strong {
@@ -528,6 +576,10 @@ button:hover {
     max-width: 2rem;
 }
 
+/* END OF SECTION VISIT US --------------------------------------------------------- */
+
+/* BEGIN OF OUR SERVICES ------------------------------------------------------------ */
+
 .ourServices {
     margin: auto;
     max-width: 95vw;
@@ -546,15 +598,43 @@ button:hover {
     font-size: 1.8rem;
     text-align: center;
     font-weight: 300;
+    line-height: 1.5;
 }
 
 .ourServices strong {
     color: var(--primary-layout-color);
 }
 
+.ourServices ul {
+    margin: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    
+}
+
+.ourServices ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    list-style: none;
+}
+
+.ourServices img {
+    margin-right: 1rem;
+    width: 3rem;
+    height: auto;
+}
+
+
+
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 340px) {
+
+    body {
+        padding-bottom: 12rem;
+    }
 
     footer .adress {
         font-size: 1.7rem;

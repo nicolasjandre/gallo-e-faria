@@ -16,13 +16,23 @@
 <body>
 
     <header id="header">
-        <div class="logo-wrapper"><img src="./assets/logoresize.png" alt="Logo Gallo e Faria"></div>
         
-        <div class="container" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
+        <div class="logo-wrapper"><img src="./assets/logoresize.png" alt="Logo Gallo e Faria"></div>
+        <nav id="nav">
+            <button id="mobileButton" type="button" aria-expanded="false">
+                
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            
+                <ul id="navList">
+                    <li><a href="">Início</a></li>
+                    <li><a href="">Sobre nós</a></li>
+                    <li><a href="">Serviços</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </button>
+        </nav>
     </header>
 
     <main id="content">
@@ -61,8 +71,7 @@
                     <div class="fourthSlideText">
                         <h2>precisão no reparo <strong>potência na estrada</strong></h2>
                     </div>
-                    <img src="./assets/vwgol.webp"
-                        alt="Volkswagen Gol">
+                    <img src="./assets/vwgol.webp" alt="Volkswagen Gol">
                 </div>
                 <!-- Slide Images End-->
                 <div class="navigation-auto">
@@ -88,11 +97,11 @@
             <h1><span>Gallo e Faria</span>: um nome de confiança</h1>
             <p>Com 23 anos de experiência, a Gallo e Faria oferece o melhor serviço de reparo da região com selo de
                 qualidade no atendimento. Nossa maior prioridade é a relação com o cliente!</p>
-            
-            <a target="_blank"
-            href="https://api.whatsapp.com/send?phone=5521994950814&text=Ol%C3%A1!%20Gostaria%20de%20uma%20informa%C3%A7%C3%A3o."><button><img
-            src="./assets/whatsapp-icon.svg" alt="Whatsapp Icon"> Fale conosco</button></a>
-           
+
+            <button
+                onclick="window.open('https://api.whatsapp.com/send?phone=5521994950814&text=Ol%C3%A1!%20Gostaria%20de%20uma%20informa%C3%A7%C3%A3o.', '_blank')"
+                type="button"><img src="./assets/whatsapp-icon.svg" alt="Whatsapp Icon">Fale conosco</button></a>
+
             <div class="fachada">
 
                 <img src="./assets/fachadamobile.jpg" alt="Fachada Gallo e Faria">
@@ -103,43 +112,62 @@
             </div>
 
         </section>
-        
+
 
         <section class="visit-us">
-            
+
             <div class="galloTeam">
                 <img src="./assets/equipegalloefaria.jpg" alt="Equipe Gallo e Faria">
             </div>
-        
+
             <h2>Venha nos <strong>visitar!</strong></h2>
-            <p>Ao longo dos 23 anos de trabalho, nos tornamos a maior e mais bem equipada Autopeças e Mecânica da região. Venha ter sua experiência conosco!</p>
-            
+            <p>Ao longo dos 23 anos de trabalho, nos tornamos a maior e mais bem equipada Autopeças e Mecânica da
+                região. Venha ter sua experiência conosco!</p>
+
             <div class="location">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14768.400674757277!2d-42.7950817!3d-22.2741951!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x98396585a5e4f7%3A0x8baa4966e9532c42!2sAuto%20Pecas%20Gallo%20%26%20Faria!5e0!3m2!1spt-BR!2sbr!4v1668124183607!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe title="Minimapa do Google com a localização da empresa"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14768.400674757277!2d-42.7950817!3d-22.2741951!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x98396585a5e4f7%3A0x8baa4966e9532c42!2sAuto%20Pecas%20Gallo%20%26%20Faria!5e0!3m2!1spt-BR!2sbr!4v1668124183607!5m2!1spt-BR!2sbr"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <h2>Teresópolis</h2>
                 <h3>Bonsucesso</h3>
                 <ul>
-                    <li><img src="./assets/localizationicon.png" alt="Localization Icon"><a href="">Rua Dr. Rogério de Moura Estevão - próximo ao corpo de bombeiros</a></li>
+                    <li><img src="./assets/localizationicon.png" alt="Localization Icon"><a href="">Rua Dr. Rogério de
+                            Moura Estevão - próximo ao corpo de bombeiros</a></li>
                     <li><img src="./assets/whatsapp-icon.svg" alt="Whatsapp Icon"><a href="">(21)99495-0814 </a></li>
                     <li><img src="./assets/relogio.png" alt="Relógio">Seg-Sex:</li>
                     <div class="listHours">
-                         <span>08:00 - 18:00</span><span>Sáb:</span> <span>08:00 - 12:00</span>
+                        <span>08:00 - 18:00</span><span>Sáb:</span> <span>08:00 - 12:00</span>
                     </div>
                 </ul>
 
                 <div class="button2">
-                    <a target="_blank"
-                        href="https://api.whatsapp.com/send?phone=5521994950814&text=Ol%C3%A1!%20Gostaria%20de%20uma%20informa%C3%A7%C3%A3o."><button><img
-                        src="./assets/whatsapp-icon.svg" alt="Whatsapp Icon"> Agendar visita</button></a>
+                    <button
+                        onclick="window.open('https://api.whatsapp.com/send?phone=5521994950814&text=Ol%C3%A1!%20Gostaria%20de%20uma%20informa%C3%A7%C3%A3o.', '_blank')"
+                        type="button"><img src="./assets/whatsapp-icon.svg" alt="Whatsapp Icon">Agendar
+                        visita</button></a>
                 </div>
             </div>
-    
+
         </section>
 
         <section class="ourServices">
 
             <h2>nossos <strong>serviços</strong></h2>
-            <p>Temos profunda experiência trabalhando com qualquer tipo de veículo, atendendo a linha pesada, pickups diesel, carros de passeio e utilitários.</p>
+            <p>Temos profunda experiência trabalhando com qualquer tipo de veículo. Atendemos linha pesada, pickups
+                diesel, carros de passeio e utilitários.</p>
+
+            <ul>
+                <li><img src="./assets/diagnosis.png" alt="Ícone Diagnóstico"> Diagnóstico</li>
+                <li><img src="./assets/repair.png" alt="Ícone manutenção"> Manutenção</li>
+                <li><img src="./assets/break.webp" alt="Ícone freio"> Freio</li>
+                <li><img src="./assets/motor.png" alt="Ícone motor"> Motor</li>
+                <li><img src="./assets/exaust.png" alt="Ícone exaustor"> Exaustão</li>
+                <li><img src="./assets/cooling.png" alt="Ícone radiador"> Aquecimento e resfriamento</li>
+                <li><img src="./assets/oil.png" alt="Ícone troca de óleo"> Troca de óleo</li>
+                <li><img src="./assets/start.png" alt="Ícone de partida"> Partida</li>
+                <li><img src="./assets/suspension.png" alt="Ícone de suspensão"> Direção e Suspensão</li>
+            </ul>
 
         </section>
 
@@ -147,6 +175,7 @@
     </main>
 
     <footer id="footer">
+        
         <ul>
             <li><img src="./assets/instagram.png" alt="Ícone do Instagram"><a target="_blank"
                     href="https://www.instagram.com/galloefaria/">Instagram</a></li>

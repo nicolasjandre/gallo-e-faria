@@ -13,13 +13,12 @@ SE O COUNT FOR MAIOR QUE 4, A COUNT VOLTA PRA 1
 USAMOS NO FINAL A VARIAVEL COUNT PRA SETAR O RADIO EM ESPECIFICO QUE
 QUEREMOS ATIVO */
 
-
 let count = 1
 document.getElementById("radio1").checked = true;
 
 setInterval( function(){
     nextImage();
-}, 6000)
+}, 5000)
 
 function nextImage(){
     count++;
@@ -30,6 +29,18 @@ function nextImage(){
     document.getElementById("radio" + count).checked = true;
 }
 
+/* BUTTON FROM 3 ROWS TO X */
 function myFunction(x) {
     x.classList.toggle("change");
 }
+
+const mobileButton = document.getElementById('mobileButton');
+
+function toggleMenu(event) {
+    if (event.type === 'touchstart') event.preventDefault()
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+}
+
+mobileButton.addEventListener('click', toggleMenu);
+mobileButton.addEventListener('touchstart', toggleMenu);
