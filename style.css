@@ -81,6 +81,7 @@ body {
     text-decoration: none;
     color: black;
     font-size: 1.6rem;
+    -webkit-tap-highlight-color: transparent;
 }
 
 #navList {
@@ -97,7 +98,7 @@ body {
     transition: .7s;
     visibility: hidden;
     overflow-y: hidden;
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid black;
 }
 
 #nav.active #navList {
@@ -105,7 +106,7 @@ body {
     flex-direction: column;
     width: 100%;
     height: 22rem;
-    max-height: 60rem;
+    max-height: 24rem;
     visibility: visible;
 }
 
@@ -672,10 +673,6 @@ a {
 }
 
 @media (min-width: 340px) {
-
-    #nav.active #navList {
-        height: 62vw;
-    }
 
     body {
         padding-bottom: 12rem;
