@@ -37,10 +37,9 @@ function myFunction(x) {
 const mobileButton = document.getElementById('mobileButton');
 
 function toggleMenu(event) {
-    if (event.type === 'touchstart') event.preventDefault()
+
     const nav = document.getElementById('nav');
     nav.classList.toggle('active');
 }
 
 mobileButton.addEventListener('click', toggleMenu);
-mobileButton.addEventListener('touchstart', toggleMenu);

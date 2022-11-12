@@ -35,6 +35,9 @@ body {
     min-width: 100%;
     max-height: 9rem;
     background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 /* HAMBURGUER MENU ------------------------------------------------------ */
 .bar1, .bar2, .bar3 {
@@ -77,8 +80,7 @@ body {
 #navList a {
     text-decoration: none;
     color: black;
-    font-size: 1.5rem;
-    padding: 1.5rem;
+    font-size: 1.6rem;
 }
 
 #navList {
@@ -108,11 +110,18 @@ body {
 }
 
 #navList li {
+    text-align: center;
     list-style: none;
-    padding: 1.5rem;
     border-bottom: 2px solid var(--primary-layout-color);
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
+    transition: .5s;
+    padding: 1.5rem;
+}
+
+#navList li:hover {
+    border-bottom: 2px solid var(--primary-layout-color);
+    width: 90%;
 }
 
 /* NAV END ------------------------------------------------------------------------*/
